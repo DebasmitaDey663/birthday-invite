@@ -37,7 +37,7 @@
         #preloader.hide { opacity: 0; pointer-events: none; }
         .loader-text {
             font-family: 'Dancing Script', cursive; font-size: 2.5rem;
-            background: linear-gradient(90deg, #ff6ec7, #ffd700, #ff6ec7);
+            background: linear-gradient(90deg, #d4a99a, #c9a96e, #d4a99a);
             background-size: 200%;
             -webkit-background-clip: text; -webkit-text-fill-color: transparent;
             animation: shimmer 1.5s infinite;
@@ -49,8 +49,8 @@
             min-height: 100vh; display: flex; flex-direction: column;
             align-items: center; justify-content: center; position: relative;
             background:
-                radial-gradient(circle at 20% 80%, rgba(255,110,199,.15) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(255,215,0,.12) 0%, transparent 50%),
+                radial-gradient(circle at 20% 80%, rgba(212,169,154,.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(201,169,110,.12) 0%, transparent 50%),
                 #0a0a0a;
             text-align: center; padding: 2rem; overflow: hidden;
         }
@@ -58,21 +58,21 @@
             content: ''; position: absolute; border-radius: 50%;
             filter: blur(80px); animation: float 8s ease-in-out infinite;
         }
-        .hero::before { width: 400px; height: 400px; background: rgba(255,110,199,.12); top: -100px; left: -100px; }
-        .hero::after { width: 350px; height: 350px; background: rgba(255,215,0,.1); bottom: -80px; right: -80px; animation-delay: -4s; }
+        .hero::before { width: 400px; height: 400px; background: rgba(212,169,154,.12); top: -100px; left: -100px; }
+        .hero::after { width: 350px; height: 350px; background: rgba(201,169,110,.1); bottom: -80px; right: -80px; animation-delay: -4s; }
         @keyframes float { 0%,100%{transform:translateY(0) scale(1)} 50%{transform:translateY(-30px) scale(1.05)} }
 
         .hero-badge {
             display: inline-block; padding: .4rem 1.4rem;
-            border: 1px solid rgba(255,215,0,.4); border-radius: 50px;
+            border: 1px solid rgba(201,169,110,.4); border-radius: 50px;
             font-size: .75rem; letter-spacing: 3px; text-transform: uppercase;
-            color: #ffd700; margin-bottom: 1.5rem;
+            color: #c9a96e; margin-bottom: 1.5rem;
             animation: fadeUp .8s ease both; backdrop-filter: blur(4px);
         }
         .hero h1 {
             font-family: 'Playfair Display', serif;
             font-size: clamp(3rem, 8vw, 7rem); font-weight: 900; line-height: 1.05;
-            background: linear-gradient(135deg, #fff 0%, #ff6ec7 40%, #ffd700 70%, #fff 100%);
+            background: linear-gradient(135deg, #fff 0%, #d4a99a 40%, #c9a96e 70%, #fff 100%);
             background-size: 300%;
             -webkit-background-clip: text; -webkit-text-fill-color: transparent;
             animation: fadeUp .8s .2s ease both, gradient-shift 6s ease infinite;
@@ -83,7 +83,7 @@
         .hero-sub {
             font-family: 'Dancing Script', cursive;
             font-size: clamp(1.1rem, 2.5vw, 1.6rem);
-            color: #ff6ec7; margin-top: 1rem;
+            color: #d4a99a; margin-top: 1rem;
             animation: fadeUp .8s .4s ease both;
         }
         .hero-tagline {
@@ -100,9 +100,9 @@
         }
         .scroll-hint span {
             font-size: .7rem; letter-spacing: 2px; text-transform: uppercase;
-            color: rgba(255,215,0,.5);
+            color: rgba(201,169,110,.5);
         }
-        .scroll-hint i { font-size: 1.2rem; color: rgba(255,215,0,.6); }
+        .scroll-hint i { font-size: 1.2rem; color: rgba(201,169,110,.6); }
         @keyframes bounce { 0%,100%{transform:translateY(0)} 50%{transform:translateY(8px)} }
         @keyframes fadeUp { from{opacity:0;transform:translateY(30px)} to{opacity:1;transform:translateY(0)} }
 
@@ -121,12 +121,12 @@
             margin-bottom: .5rem; position: relative;
         }
         .section-title span {
-            background: linear-gradient(135deg, #ff6ec7, #ffd700);
+            background: linear-gradient(135deg, #d4a99a, #c9a96e);
             -webkit-background-clip: text; -webkit-text-fill-color: transparent;
         }
         .section-divider {
             width: 60px; height: 3px;
-            background: linear-gradient(90deg, #ff6ec7, #ffd700);
+            background: linear-gradient(90deg, #d4a99a, #c9a96e);
             margin: 0 auto 1rem; border-radius: 2px;
         }
         .section-subtitle {
@@ -145,7 +145,7 @@
             margin-bottom: .8rem;
         }
         .bits-hero h3 span {
-            background: linear-gradient(135deg, #ff6ec7, #ffd700);
+            background: linear-gradient(135deg, #d4a99a, #c9a96e);
             -webkit-background-clip: text; -webkit-text-fill-color: transparent;
         }
         .bits-hero p {
@@ -173,8 +173,8 @@
         }
         .detail-card:hover {
             transform: translateY(-6px) !important;
-            border-color: rgba(255,110,199,.3);
-            box-shadow: 0 20px 60px rgba(255,110,199,.1);
+            border-color: rgba(212,169,154,.3);
+            box-shadow: 0 20px 60px rgba(212,169,154,.1);
         }
         .detail-card .icon {
             font-size: 2.2rem; margin-bottom: 1rem;
@@ -189,11 +189,11 @@
             font-size: .85rem; color: rgba(255,255,255,.55); line-height: 1.6;
         }
         .detail-card a {
-            color: #ff6ec7; text-decoration: none;
-            border-bottom: 1px solid rgba(255,110,199,.3);
+            color: #d4a99a; text-decoration: none;
+            border-bottom: 1px solid rgba(212,169,154,.3);
             transition: border-color .3s;
         }
-        .detail-card a:hover { border-color: #ff6ec7; }
+        .detail-card a:hover { border-color: #d4a99a; }
 
         /* ---------- DRESS CODE ---------- */
         .dresscode-section { padding-top: 2rem; }
@@ -206,7 +206,7 @@
             font-size: clamp(2rem, 5vw, 3rem); margin-bottom: .3rem;
         }
         .dc-hero h2 span {
-            background: linear-gradient(135deg, #ff6ec7, #ffd700);
+            background: linear-gradient(135deg, #d4a99a, #c9a96e);
             -webkit-background-clip: text; -webkit-text-fill-color: transparent;
         }
         .dc-hero .dc-sub {
@@ -216,7 +216,7 @@
         .dc-assignment {
             text-align: center;
             background:
-                radial-gradient(circle at 50% 50%, rgba(255,110,199,.06) 0%, transparent 60%),
+                radial-gradient(circle at 50% 50%, rgba(212,169,154,.06) 0%, transparent 60%),
                 rgba(255,255,255,.02);
             border: 1px solid rgba(255,255,255,.06);
             border-radius: 30px; padding: 3rem 2rem;
@@ -225,7 +225,7 @@
         .dc-assignment::before {
             content: ''; position: absolute;
             width: 200%; height: 200%; top: -50%; left: -50%;
-            background: conic-gradient(from 0deg, transparent, rgba(255,110,199,.05), transparent, rgba(255,215,0,.05), transparent);
+            background: conic-gradient(from 0deg, transparent, rgba(212,169,154,.05), transparent, rgba(201,169,110,.05), transparent);
             animation: spin 12s linear infinite;
         }
         @keyframes spin { to{transform:rotate(360deg)} }
@@ -248,7 +248,7 @@
         }
         .dc-assignment .quote {
             font-family: 'Dancing Script', cursive;
-            font-size: 1.1rem; color: #ff6ec7;
+            font-size: 1.1rem; color: #d4a99a;
             max-width: 480px; margin: 0 auto; line-height: 1.5;
             font-style: italic;
         }
@@ -272,7 +272,7 @@
         }
         .dc-item:hover {
             transform: translateY(-6px) !important;
-            border-color: rgba(255,110,199,.25);
+            border-color: rgba(212,169,154,.25);
         }
         .dc-item .dc-icon {
             width: 70px; height: 70px; border-radius: 50%;
@@ -283,11 +283,11 @@
         }
         .dc-item .dc-icon:hover {
             transform: scale(1.1);
-            box-shadow: 0 0 30px rgba(255,110,199,.3);
+            box-shadow: 0 0 30px rgba(212,169,154,.3);
         }
         .dc-icon.black-bg { background: linear-gradient(135deg, #1a1a1a, #333); }
-        .dc-icon.pool-bg { background: linear-gradient(135deg, #0077b6, #00b4d8); }
-        .dc-icon.attitude-bg { background: linear-gradient(135deg, #7b2ff7, #ff6ec7); }
+        .dc-icon.pool-bg { background: linear-gradient(135deg, #2a3a3f, #3a4f55); }
+        .dc-icon.attitude-bg { background: linear-gradient(135deg, #2a2220, #3d2e2b); }
         .dc-item h4 { font-family: 'Playfair Display', serif; font-size: 1.05rem; margin-bottom: .4rem; }
         .dc-item p { font-size: .8rem; color: rgba(255,255,255,.45); line-height: 1.6; }
 
@@ -299,7 +299,7 @@
         }
         .countdown-box {
             background: rgba(255,255,255,.04);
-            border: 1px solid rgba(255,215,0,.15);
+            border: 1px solid rgba(201,169,110,.15);
             border-radius: 16px; padding: 1.5rem 1.2rem;
             min-width: 100px; backdrop-filter: blur(10px);
             transition: transform .3s;
@@ -308,7 +308,7 @@
         .countdown-box .num {
             font-family: 'Playfair Display', serif;
             font-size: 2.8rem; font-weight: 900;
-            background: linear-gradient(135deg, #ffd700, #ff6ec7);
+            background: linear-gradient(135deg, #c9a96e, #d4a99a);
             -webkit-background-clip: text; -webkit-text-fill-color: transparent;
         }
         .countdown-box .label {
@@ -336,7 +336,7 @@
         }
         .gift-card:hover {
             transform: translateY(-6px) !important;
-            box-shadow: 0 20px 60px rgba(255,110,199,.12);
+            box-shadow: 0 20px 60px rgba(212,169,154,.12);
         }
         .gift-card.claimed { opacity: .7; }
         .gift-card.claimed .gift-img::after {
@@ -347,10 +347,11 @@
             height: 160px; display: flex; align-items: center; justify-content: center;
             font-size: 3.5rem; position: relative; overflow: hidden;
         }
-        .gift-img.crochet-bg { background: linear-gradient(135deg, #ff6ec7, #ff9a9e, #fad0c4); }
-        .gift-img.shoes-bg { background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); }
-        .gift-img.makeup-bg { background: linear-gradient(135deg, #e44d26, #ff6ec7, #ffd700); }
-        .gift-img.surprise-bg { background: linear-gradient(135deg, #ffd700, #ff6ec7, #7b2ff7); }
+        .gift-img.crochet-bg { background: linear-gradient(135deg, #2a2220, #3d2e2b, #2a2220); }
+        .gift-img.shoes-bg { background: linear-gradient(135deg, #1a1a1a, #2a2525, #1a1a1a); }
+        .gift-img.makeup-bg { background: linear-gradient(135deg, #2a2220, #352a25, #2a2220); }
+        .gift-img.surprise-bg { background: linear-gradient(135deg, #2a2520, #352e25, #2a2520); }
+        .gift-img.tshirt-bg { background: linear-gradient(135deg, #1f1f1f, #2a2a2a, #1f1f1f); }
         .gift-body { padding: 1.5rem; }
         .gift-body h3 {
             font-family: 'Playfair Display', serif;
@@ -366,7 +367,7 @@
         .gift-link {
             display: inline-flex; align-items: center; justify-content: center;
             gap: .5rem; padding: .55rem 1.2rem;
-            background: linear-gradient(135deg, #ff6ec7, #ffd700);
+            background: linear-gradient(135deg, #d4a99a, #c9a96e);
             color: #0a0a0a; text-decoration: none; border-radius: 50px;
             font-size: .75rem; font-weight: 600;
             transition: transform .3s, box-shadow .3s; border: none;
@@ -374,27 +375,27 @@
         }
         .gift-link:hover {
             transform: scale(1.05);
-            box-shadow: 0 8px 30px rgba(255,110,199,.3);
+            box-shadow: 0 8px 30px rgba(212,169,154,.3);
         }
         .claim-btn {
             display: inline-flex; align-items: center; justify-content: center;
             gap: .5rem; padding: .55rem 1.2rem;
             background: transparent;
-            border: 1px solid rgba(255,215,0,.4); color: #ffd700;
+            border: 1px solid rgba(201,169,110,.4); color: #c9a96e;
             border-radius: 50px; font-size: .75rem; font-weight: 600;
             cursor: pointer; transition: all .3s;
             font-family: 'Poppins', sans-serif;
         }
         .claim-btn:hover {
-            background: rgba(255,215,0,.1);
-            box-shadow: 0 4px 20px rgba(255,215,0,.15);
+            background: rgba(201,169,110,.1);
+            box-shadow: 0 4px 20px rgba(201,169,110,.15);
         }
         .claimed-badge {
             display: flex; align-items: center; justify-content: center;
             gap: .4rem; padding: .55rem 1rem;
-            background: rgba(255,110,199,.1);
-            border: 1px solid rgba(255,110,199,.25);
-            border-radius: 50px; font-size: .72rem; color: #ff6ec7;
+            background: rgba(212,169,154,.1);
+            border: 1px solid rgba(212,169,154,.25);
+            border-radius: 50px; font-size: .72rem; color: #d4a99a;
         }
         .claimed-badge i { font-size: .65rem; }
 
@@ -424,13 +425,13 @@
         }
         .unlock-btn::before {
             content: ''; position: absolute; inset: 0;
-            background: linear-gradient(135deg, rgba(255,110,199,.15), rgba(255,215,0,.15));
+            background: linear-gradient(135deg, rgba(212,169,154,.15), rgba(201,169,110,.15));
             opacity: 0; transition: opacity .4s;
         }
         .unlock-btn:hover::before { opacity: 1; }
         .unlock-btn:hover {
-            border-color: rgba(255,110,199,.4);
-            box-shadow: 0 0 30px rgba(255,110,199,.15);
+            border-color: rgba(212,169,154,.4);
+            box-shadow: 0 0 30px rgba(212,169,154,.15);
             transform: scale(1.03);
         }
         .unlock-btn i { position: relative; z-index: 1; }
@@ -442,7 +443,7 @@
         .secret-reveal.show { display: block; }
         .secret-reveal p {
             font-family: 'Dancing Script', cursive;
-            font-size: 1.5rem; color: #ffd700;
+            font-size: 1.5rem; color: #c9a96e;
             margin-bottom: 0;
         }
 
@@ -479,12 +480,12 @@
             outline: none; margin-bottom: 1rem;
             transition: border-color .3s;
         }
-        .modal input:focus { border-color: rgba(255,110,199,.4); }
+        .modal input:focus { border-color: rgba(212,169,154,.4); }
         .modal input::placeholder { color: rgba(255,255,255,.25); }
         .modal-buttons { display: flex; gap: .8rem; justify-content: center; }
         .modal-confirm {
             padding: .7rem 1.8rem;
-            background: linear-gradient(135deg, #ff6ec7, #ffd700);
+            background: linear-gradient(135deg, #d4a99a, #c9a96e);
             color: #0a0a0a; border: none; border-radius: 50px;
             font-family: 'Poppins', sans-serif; font-size: .85rem;
             font-weight: 600; cursor: pointer; transition: transform .3s;
@@ -517,7 +518,7 @@
         }
         footer p {
             font-family: 'Dancing Script', cursive; font-size: 1.3rem;
-            background: linear-gradient(135deg, #ff6ec7, #ffd700);
+            background: linear-gradient(135deg, #d4a99a, #c9a96e);
             -webkit-background-clip: text; -webkit-text-fill-color: transparent;
         }
         footer .small {
@@ -540,15 +541,15 @@
             width: 50px; height: 50px; border-radius: 50%;
             background: rgba(255,255,255,.06);
             border: 1px solid rgba(255,255,255,.12);
-            color: #ffd700; font-size: 1.2rem; cursor: pointer;
+            color: #c9a96e; font-size: 1.2rem; cursor: pointer;
             z-index: 100; backdrop-filter: blur(10px);
             transition: transform .3s, box-shadow .3s;
             display: flex; align-items: center; justify-content: center;
         }
-        .music-toggle:hover { transform: scale(1.1); box-shadow: 0 0 25px rgba(255,215,0,.2); }
+        .music-toggle:hover { transform: scale(1.1); box-shadow: 0 0 25px rgba(201,169,110,.2); }
         .music-toggle.playing .bar { animation: music-bar .6s ease-in-out infinite alternate; }
         .music-bars { display: flex; gap: 2px; align-items: flex-end; height: 18px; }
-        .bar { width: 3px; background: #ffd700; border-radius: 2px; }
+        .bar { width: 3px; background: #c9a96e; border-radius: 2px; }
         .bar:nth-child(1) { height: 6px; animation-delay: 0s; }
         .bar:nth-child(2) { height: 12px; animation-delay: .15s; }
         .bar:nth-child(3) { height: 8px; animation-delay: .3s; }
@@ -564,7 +565,7 @@
         .pool-wave::after {
             content: ''; position: absolute; bottom: 0; left: -50%;
             width: 200%; height: 20px;
-            background: linear-gradient(90deg, transparent, rgba(0,180,216,.3), transparent);
+            background: linear-gradient(90deg, transparent, rgba(201,169,110,.2), transparent);
             animation: wave 3s ease-in-out infinite;
         }
         @keyframes wave { 0%,100%{transform:translateX(-25%)} 50%{transform:translateX(25%)} }
@@ -762,6 +763,20 @@
             </div>
         </div>
 
+        <!-- Botnia T-Shirts -->
+        <div class="gift-card" data-gift="tshirts">
+            <div class="gift-img tshirt-bg">&#128085;</div>
+            <div class="gift-body">
+                <h3>Oversized Tees</h3>
+                <p>Comfy, sassy, and very on-brand. Pool day loungewear sorted.</p>
+                <div class="gift-actions">
+                    <a href="https://www.botnia.in/collections/oversized-t-shirts/products/no-you-do-it-oversized-t-shirt?variant=44679242678423" target="_blank" class="gift-link"><i class="fas fa-external-link-alt"></i> "No You Do It"</a>
+                    <a href="https://www.botnia.in/collections/oversized-t-shirts/products/ew-peaple-oversized-t-shirt?variant=46826191683735" target="_blank" class="gift-link"><i class="fas fa-external-link-alt"></i> "Ew People"</a>
+                    <button class="claim-btn" onclick="openClaim('tshirts')"><i class="fas fa-gift"></i> I'm Bringing This</button>
+                </div>
+            </div>
+        </div>
+
         <!-- Your Choice -->
         <div class="gift-card" data-gift="surprise">
             <div class="gift-img surprise-bg">&#127873;</div>
@@ -803,7 +818,7 @@
         </iframe>
     </div>
     <p class="reveal" style="text-align:center; margin-top:1rem; color:rgba(255,255,255,.5); font-size:.85rem;">
-        <i class="fas fa-map-marker-alt" style="color:#ff6ec7;"></i>
+        <i class="fas fa-map-marker-alt" style="color:#c9a96e;"></i>
         504, 3rd C Main Road, Bengaluru, Karnataka 560043
     </p>
 </section>
@@ -969,7 +984,7 @@ function launchConfetti() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
     const pieces = [];
-    const colors = ['#ff6ec7','#ffd700','#ff9a9e','#7b2ff7','#00b4d8','#fff'];
+    const colors = ['#d4a99a','#c9a96e','#e8d5b7','#bfa68a','#fff','#a08570'];
     for (let i = 0; i < 150; i++) {
         pieces.push({
             x: Math.random()*canvas.width,
@@ -1016,7 +1031,7 @@ document.addEventListener('mousemove', e => {
     spark.className = 'sparkle';
     spark.style.left = e.clientX+'px';
     spark.style.top = e.clientY+'px';
-    spark.style.background = Math.random()>.5 ? '#ff6ec7' : '#ffd700';
+    spark.style.background = Math.random()>.5 ? '#d4a99a' : '#c9a96e';
     document.body.appendChild(spark);
     setTimeout(() => spark.remove(), 600);
 });
