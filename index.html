@@ -726,14 +726,13 @@
 
     <div class="registry-grid" id="registryGrid">
         <!-- Crochet Flowers -->
-        <div class="gift-card" data-gift="crochet">
+        <div class="gift-card">
             <div class="gift-img crochet-bg">&#127800;</div>
             <div class="gift-body">
                 <h3>Crochet Flowers</h3>
                 <p>Flowers that refuse to die? Yes please. Anything cute, quirky and very me.</p>
                 <div class="gift-actions">
                     <a href="https://www.google.com/aclk?sa=L&ai=DChsSEwjzx7nyy46XAxWJN4MDHSPfIfsYACICCAEQSxoCc2Y&co=1&ase=3&agsac=FOaqNb6hcQ0&gclid=CjwKCAjw_eLVBhBEEiwAeaYZfOVQmLJueb3VCu0vNBVzSFrTbVmoVwW6kIWV9DCwK21o2k-1bP8lsxoCKS0QAvD_BwE&ei=YvW4aqGHOZ-YseMPscnuoQM&cid=CAASpwLkaLqpW0Cl6nTaa-mNRoRZJTKdbLp1ykQ_k5K8038KUzZPXppyP4iRp16QfMLB2l82xlucuO_YtjmPlVsw0E_N5N4UibhwBCZrZr7oPRGQtIF_S8uzJPs2WRzivItAUBvtHQfoaEfTJuHb3kjNdiDIDF_xJQB8Cp5rujOQDbExKwwhQWxqGvKEbrhF4bH7dI5FGUSUiP6PuqwIdRbyrTzb19_abvF2jAb6Bwjq-j_ZbF-ztseLDbY4AB0EptXEiFSdODXc9CXuC6zFxnMPXbrLlFYOWnq6jcZSB7mKCzsWj-oaF5Gd5eK3xDDG2AsA4qYegTjvMXMYDaH6JITf6iZ7OxXCKh01DQ_JdwwL8le56M-vBzCkIGGcQSOnst3LKvLUSFmQ5J0a&sig=AOD64_0lBySnDaEjPtu0709k6pJR2zAimg&ctype=70&q=&sqi=2&ved=2ahUKEwihwLPyy46XAxUfTGwGHbGkOzQQwg8oAHoECAwQOA&adurl=" target="_blank" class="gift-link"><i class="fas fa-external-link-alt"></i> Browse Ideas</a>
-                    <button class="claim-btn" onclick="openClaim('crochet')"><i class="fas fa-gift"></i> I'm Bringing This</button>
                 </div>
             </div>
         </div>
@@ -752,39 +751,59 @@
         </div>
 
         <!-- Makeup -->
-        <div class="gift-card" data-gift="makeup">
+        <div class="gift-card">
             <div class="gift-img makeup-bg">&#128132;</div>
             <div class="gift-body">
                 <h3>Makeup I Should Try</h3>
                 <p>You know what I usually wear. What do you want to see me try more?</p>
                 <div class="gift-actions">
-                    <button class="claim-btn" onclick="openClaim('makeup')"><i class="fas fa-gift"></i> I'm Bringing This</button>
+                    <button class="gift-link" style="background:transparent;border:1px solid rgba(201,169,110,.4);color:#c9a96e;">
+                        <i class="fas fa-sparkles"></i> Surprise Me With Makeup
+                    </button>
                 </div>
             </div>
         </div>
 
-        <!-- Botnia T-Shirts -->
-        <div class="gift-card" data-gift="tshirts">
+        <!-- Botnia Tee - No You Do It -->
+        <div class="gift-card" data-gift="tshirt_no">
             <div class="gift-img tshirt-bg">&#128085;</div>
             <div class="gift-body">
-                <h3>Oversized Tees</h3>
-                <p>Comfy, sassy, and very on-brand. Pool day loungewear sorted.</p>
+                <h3>Oversized Tee 
+                    <span style="display:block;font-size:.8rem;font-weight:400;color:rgba(255,255,255,.6);margin-top:.2rem;">"No You Do It"</span>
+                </h3>
+                <p>Comfy, sassy and very on-brand. One person, one tee.</p>
                 <div class="gift-actions">
-                    <a href="https://www.botnia.in/collections/oversized-t-shirts/products/no-you-do-it-oversized-t-shirt?variant=44679242678423" target="_blank" class="gift-link"><i class="fas fa-external-link-alt"></i> "No You Do It"</a>
-                    <a href="https://www.botnia.in/collections/oversized-t-shirts/products/ew-peaple-oversized-t-shirt?variant=46826191683735" target="_blank" class="gift-link"><i class="fas fa-external-link-alt"></i> "Ew People"</a>
-                    <button class="claim-btn" onclick="openClaim('tshirts')"><i class="fas fa-gift"></i> I'm Bringing This</button>
+                    <a href="https://www.botnia.in/collections/oversized-t-shirts/products/no-you-do-it-oversized-t-shirt?variant=44679242678423" target="_blank" class="gift-link"><i class="fas fa-external-link-alt"></i> View Tee</a>
+                    <button class="claim-btn" onclick="openClaim('tshirt_no')"><i class="fas fa-gift"></i> I'm Bringing This</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botnia Tee - Ew People -->
+        <div class="gift-card" data-gift="tshirt_ew">
+            <div class="gift-img tshirt-bg">&#128085;</div>
+            <div class="gift-body">
+                <h3>Oversized Tee 
+                    <span style="display:block;font-size:.8rem;font-weight:400;color:rgba(255,255,255,.6);margin-top:.2rem;">"Ew People"</span>
+                </h3>
+                <p>For my antisocial era. Again: claim just one.</p>
+                <div class="gift-actions">
+                    <a href="https://www.botnia.in/collections/oversized-t-shirts/products/ew-peaple-oversized-t-shirt?variant=46826191683735" target="_blank" class="gift-link"><i class="fas fa-external-link-alt"></i> View Tee</a>
+                    <button class="claim-btn" onclick="openClaim('tshirt_ew')"><i class="fas fa-gift"></i> I'm Bringing This</button>
                 </div>
             </div>
         </div>
 
         <!-- Your Choice -->
-        <div class="gift-card" data-gift="surprise">
+        <div class="gift-card">
             <div class="gift-img surprise-bg">&#127873;</div>
             <div class="gift-body">
                 <h3>Your Choice</h3>
                 <p>Anything that screams "this is SO her" &mdash; I trust your judgement.</p>
                 <div class="gift-actions">
-                    <button class="claim-btn" onclick="openClaim('surprise')"><i class="fas fa-gift"></i> I'm Bringing This</button>
+                    <button class="gift-link" style="background:transparent;border:1px solid rgba(201,169,110,.4);color:#c9a96e;">
+                        <i class="fas fa-gift"></i> I'll Figure Something Out
+                    </button>
                 </div>
             </div>
         </div>
