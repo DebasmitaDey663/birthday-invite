@@ -344,18 +344,21 @@
             background: rgba(0,0,0,.5);
         }
         .gift-img {
-            height: 160px; display: flex; align-items: center; justify-content: center;
-            font-size: 3.5rem; position: relative; overflow: hidden;
+            height: 120px; display: flex; align-items: center; justify-content: center;
+            font-size: 2.6rem; position: relative; overflow: hidden;
         }
         .gift-img.crochet-bg { background: linear-gradient(135deg, #2a2220, #3d2e2b, #2a2220); }
         .gift-img.shoes-bg { background: linear-gradient(135deg, #1a1a1a, #2a2525, #1a1a1a); }
+        .gift-img.curl-bg { background: linear-gradient(135deg, #1f2633, #2e3b4a, #1f2633); }
+        .gift-img.perfume-bg { background: linear-gradient(135deg, #30202a, #453040, #30202a); }
+        .gift-img.belt-bg { background: linear-gradient(135deg, #262020, #3a2f2c, #262020); }
         .gift-img.makeup-bg { background: linear-gradient(135deg, #2a2220, #352a25, #2a2220); }
         .gift-img.surprise-bg { background: linear-gradient(135deg, #2a2520, #352e25, #2a2520); }
         .gift-img.tshirt-bg { background: linear-gradient(135deg, #1f1f1f, #2a2a2a, #1f1f1f); }
-        .gift-body { padding: 1.5rem; }
+        .gift-body { padding: 1.2rem; }
         .gift-body h3 {
             font-family: 'Playfair Display', serif;
-            font-size: 1.1rem; margin-bottom: .4rem;
+            font-size: 1rem; margin-bottom: .4rem;
         }
         .gift-body p {
             font-size: .8rem; color: rgba(255,255,255,.45);
@@ -727,7 +730,6 @@
     <div class="registry-grid" id="registryGrid">
         <!-- Crochet Flowers -->
         <div class="gift-card">
-            <div class="gift-img crochet-bg">&#127800;</div>
             <div class="gift-body">
                 <h3>Crochet Flowers</h3>
                 <p>Flowers that refuse to die? Yes please. Anything cute, quirky and very me.</p>
@@ -737,22 +739,9 @@
             </div>
         </div>
 
-        <!-- Theater Shoes -->
-        <div class="gift-card" data-gift="shoes">
-            <div class="gift-img shoes-bg">&#128096;</div>
-            <div class="gift-body">
-                <h3>Theatre Shoes</h3>
-                <p>The trendy ones. The cute ones. The ones that make me say, "I NEED those."</p>
-                <div class="gift-actions">
-                    <a href="https://theater.xyz" target="_blank" class="gift-link"><i class="fas fa-external-link-alt"></i> Shop Theater.xyz</a>
-                    <button class="claim-btn" onclick="openClaim('shoes')"><i class="fas fa-gift"></i> I'm Bringing This</button>
-                </div>
-            </div>
-        </div>
 
         <!-- Makeup -->
         <div class="gift-card">
-            <div class="gift-img makeup-bg">&#128132;</div>
             <div class="gift-body">
                 <h3>Makeup I Should Try</h3>
                 <p>You know what I usually wear. What do you want to see me try more?</p>
@@ -764,9 +753,57 @@
             </div>
         </div>
 
+        <!-- Curl Cream -->
+        <div class="gift-card" data-gift="curl_cream">
+            <div class="gift-body">
+                <h3>Curl Cream</h3>
+                <p>L'Oréal Professionnel Curl Expression cream to keep the curls happy and defined.</p>
+                <div class="gift-actions">
+                    <a href="https://www.nykaa.com/l-oreal-professionnel-curl-expression-long-lasting-intensive-moisturizing-curl-cream/p/21037825?ptype=product&skuId=21037825&utm_content=ads&utm_source=GooglePaid&utm_medium=PLA&utm_campaign=PerformanceMax_Hair_TopSKUs_1Day&gad_source=1&gad_campaignid=23749550870&gbraid=0AAAABBsUhjRV6HpCwqFNuN8WIw7mzwsm2&gclid=CjwKCAjww-3VBhAcEiwAwUUIu-8Uco8ChQWksJ7fXalSoQewPlxCyo2kx10OhsPyuwtgv32xDx8rChoCgX4QAvD_BwE" target="_blank" class="gift-link"><i class="fas fa-external-link-alt"></i> View Curl Cream</a>
+                    <button class="claim-btn" onclick="openClaim('curl_cream')"><i class="fas fa-gift"></i> I'm Bringing This</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Perfume -->
+        <div class="gift-card" data-gift="perfume">
+            <div class="gift-body">
+                <h3>Perfume</h3>
+                <p>Skinn Tales Ibiza perfume &mdash; something that smells like holiday and good vibes.</p>
+                <div class="gift-actions">
+                    <a href="https://www.myntra.com/perfume/skinn/skinn-women-tales-ibiza-perfume-100ml/13990542/buy?utm_source=dms_google&utm_medium=dms_pmax_cpc&utm_campaign=dms_google_pmax_cpc_shopping_CatchAll_East_TROAS_New&gad_source=1&gad_campaignid=24243095425&gbraid=0AAAAADoxBh66xBcwMycBaIBef7IK21mQI&gclid=CjwKCAjww-3VBhAcEiwAwUUIu15GMNRRihEjYIXcuZM2sM1TOdcivHisxtJvsXQi39Ws3KEL79IKbhoCuwkQAvD_BwE" target="_blank" class="gift-link"><i class="fas fa-external-link-alt"></i> View Perfume</a>
+                    <button class="claim-btn" onclick="openClaim('perfume')"><i class="fas fa-gift"></i> I'm Bringing This</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Belt - Option 1 -->
+        <div class="gift-card" data-gift="belt_option1">
+            <div class="gift-body">
+                <h3>Statement Belt &mdash; Option 1</h3>
+                <p>Black crocodile-textured belt from Newme.</p>
+                <div class="gift-actions">
+                    <a href="https://newme.asia/product/black-crocodile-textured-pu-belt?utm_source=google&utm_medium=paid&utm_campaign=Shopping_Campaign_Quantacus_Test_NEWME_Feed_CG&gad_source=1&gad_campaignid=23039497815&gbraid=0AAAAAoy-PQdN_JwBWftWq9khTehL1Om7m&gclid=CjwKCAjww-3VBhAcEiwAwUUIu9Wa7zmOHkc-0b-uUCIkk9NQrU4dATpZY48BB4MvmHjnrnrtAOFAwxoCmJwQAvD_BwE" target="_blank" class="gift-link"><i class="fas fa-external-link-alt"></i> View Belt (Option 1)</a>
+                    <button class="claim-btn" onclick="openClaim('belt_option1')"><i class="fas fa-gift"></i> I'm Bringing This</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Belt - Option 2 or 3 -->
+        <div class="gift-card" data-gift="belt_option23">
+            <div class="gift-body">
+                <h3>Statement Belt &mdash; Option 2 or 3</h3>
+                <p>Embellished belt from Myntra &mdash; choose either option 2 or 3, but only one will be claimed.</p>
+                <div class="gift-actions">
+                    <a href="https://www.myntra.com/belts/omid/omid-women-embellished-formal-belt/45264651/buy" target="_blank" class="gift-link"><i class="fas fa-external-link-alt"></i> Option 2</a>
+                    <a href="https://www.myntra.com/belts/omid/omid-women-embellished-formal-belt/45264651/buy" target="_blank" class="gift-link"><i class="fas fa-external-link-alt"></i> Option 3</a>
+                    <button class="claim-btn" onclick="openClaim('belt_option23')"><i class="fas fa-gift"></i> I'm Bringing This</button>
+                </div>
+            </div>
+        </div>
+
         <!-- Botnia Tee - No You Do It -->
         <div class="gift-card" data-gift="tshirt_no">
-            <div class="gift-img tshirt-bg">&#128085;</div>
             <div class="gift-body">
                 <h3>Oversized Tee 
                     <span style="display:block;font-size:.8rem;font-weight:400;color:rgba(255,255,255,.6);margin-top:.2rem;">"No You Do It"</span>
@@ -781,7 +818,6 @@
 
         <!-- Botnia Tee - Ew People -->
         <div class="gift-card" data-gift="tshirt_ew">
-            <div class="gift-img tshirt-bg">&#128085;</div>
             <div class="gift-body">
                 <h3>Oversized Tee 
                     <span style="display:block;font-size:.8rem;font-weight:400;color:rgba(255,255,255,.6);margin-top:.2rem;">"Ew People"</span>
@@ -796,7 +832,6 @@
 
         <!-- Your Choice -->
         <div class="gift-card">
-            <div class="gift-img surprise-bg">&#127873;</div>
             <div class="gift-body">
                 <h3>Your Choice</h3>
                 <p>Anything that screams "this is SO her" &mdash; I trust your judgement.</p>
